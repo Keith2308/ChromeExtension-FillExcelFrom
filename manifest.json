@@ -1,0 +1,16 @@
+{
+  "name": "CPQO ABU PoC User Tracker",
+  "description": "CPQO ABU PoC User Tracker",
+  "version": "0.1",
+  "author": "Keith Ong-ServiceSource",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://na77.salesforce.com/*",
+        "https://forms.office.com/Pages/*"
+      ],
+      "js": ["src/cpqotracker.js"]
+    }
+  ]
+}
